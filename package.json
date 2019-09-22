@@ -1,0 +1,15 @@
+{
+  "name": "code-block-line-number",
+  "main": "./lib/index",
+  "version": "0.0.0",
+  "description": "Display line numbers in code blocks.",
+  "keywords": [
+  ],
+  "repository": "https://github.com/q1701/inkdrop-code-block-line-number",
+  "license": "MIT",
+  "engines": {
+    "inkdrop": "^4.x"
+  },
+  "dependencies": {
+  }
+}
