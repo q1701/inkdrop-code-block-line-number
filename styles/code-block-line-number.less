@@ -1,0 +1,18 @@
+.code-block-line-number__container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas: 'line-numbers contents';
+  grid-column-gap: 1em;
+  code {
+    font-size: 100% !important;
+  }
+}
+
+.code-block-line-number__line-numbers {
+  user-select: none;
+  grid-area: line-numbers;
+}
+
+.code-block-line-number__code-contents {
+  grid-area: contents;
+}
