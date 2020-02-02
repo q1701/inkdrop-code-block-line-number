@@ -11,7 +11,6 @@ ipm install code-block-line-number
 ```
 
 ## Example
-<<<<<<< HEAD
 ![Example](https://github.com/q1701/inkdrop-code-block-line-number/raw/master/docs/images/example.png)
 
 ## Changelog
@@ -19,6 +18,3 @@ ipm install code-block-line-number
   - Improve document
 - 0.1.0
   - First release
-=======
-![Example](https://github.com/inkdropapp/inkdrop-code-block-line-number/raw/master/docs/images/example.png)
->>>>>>> 306307b2b90712ed10b9adb277a5a34ba418b091
