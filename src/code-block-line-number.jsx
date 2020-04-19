@@ -5,7 +5,7 @@ import innerText from 'react-innertext';
 
 export default function createCodeBlockWithLineNumbers(OrigPre) {
   // line numbers
-  const LineNumbersOfCodeBlock = props => {
+  const LineNumbersOfCodeBlock = (props) => {
     return (
       <code className="line-numbers-of-code-block">
         {Array.from({ length: props.numberOfLines }, (_, i) => {
@@ -15,9 +15,9 @@ export default function createCodeBlockWithLineNumbers(OrigPre) {
     );
   };
   // Code block with line numbers
-  const CodeBlockWithLineNumbers = props => {
+  const CodeBlockWithLineNumbers = (props) => {
     // Original node (built-in <pre> or a React Component)
-    const OrigNode = props => {
+    const OrigNode = (props) => {
       return OrigPre ? (
         <OrigPre {...props}>{props.children}</OrigPre>
       ) : (
