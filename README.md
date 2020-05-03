@@ -18,6 +18,8 @@ ipm install code-block-line-number
 
 ## Changelog
 
+- 0.2.1
+  - Minor update
 - 0.2.0
   - Upgrade dependencies
 - 0.1.1
