@@ -13,6 +13,7 @@
     "inkdrop": "^5.x"
   },
   "dependencies": {
+    "classnames": "^2.3.1",
     "react-innertext": "^1.1.5"
   },
   "devDependencies": {

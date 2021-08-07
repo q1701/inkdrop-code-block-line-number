@@ -18,6 +18,8 @@ ipm install code-block-line-number
 
 ## Changelog
 
+- 0.3.0
+  - Fix interoperability with [code-title](https://github.com/elpnt/inkdrop-code-title) (Thanks [kputra-xfers](https://github.com/kputra-xfers))
 - 0.2.2
   - Upgrade dependencies
 - 0.2.1

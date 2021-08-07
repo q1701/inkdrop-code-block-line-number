@@ -5,9 +5,8 @@ let origPreComponent = null;
 
 export const activate = () => {
   origPreComponent = markdownRenderer.remarkReactComponents.pre;
-  markdownRenderer.remarkReactComponents.pre = createCodeBlockWithLineNumbers(
-    origPreComponent
-  );
+  markdownRenderer.remarkReactComponents.pre =
+    createCodeBlockWithLineNumbers(origPreComponent);
 };
 
 export const deactivate = () => {

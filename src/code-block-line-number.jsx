@@ -1,4 +1,5 @@
 import React from 'react';
+import Classnames from 'classnames';
 import innerText from 'react-innertext';
 
 export default function createCodeBlockWithLineNumbers(OrigPre) {
@@ -22,12 +23,22 @@ export default function createCodeBlockWithLineNumbers(OrigPre) {
         <pre {...props}>{children}</pre>
       );
     };
+    // Detect the code-title plug-in
+    const isCodeTitleActive =
+      React.Children.toArray(children).find((e) =>
+        e?.props?.className?.includes('with-title')
+      ) !== undefined;
     // Render
     return (
       <>
         <OrigNode {...props}>
           <div className="code-block-line-number__container">
-            <div className="code-block-line-number__line-numbers">
+            <div
+              className={Classnames({
+                'code-block-line-number__line-numbers': true,
+                'with-title-block': isCodeTitleActive,
+              })}
+            >
               <LineNumbersOfCodeBlock
                 numberOfLines={innerText(children).split(/\n/).length - 1}
               />
