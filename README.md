@@ -18,6 +18,8 @@ ipm install code-block-line-number
 
 ## Changelog
 
+- 0.4.0
+  - Disabled line numbers for non-text code blocks (Thanks [lssch](https://github.com/lssch))
 - 0.3.0
   - Fix interoperability with [code-title](https://github.com/elpnt/inkdrop-code-title) (Thanks [kputra-xfers](https://github.com/kputra-xfers))
 - 0.2.2

@@ -5,11 +5,13 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
     'plugin:prettier/recommended',
+    'prettier',
     'prettier/react',
+    'prettier/standard',
   ],
   settings: {
     react: {
-      version: '16.12',
+      version: '16.14',
     },
   },
   parser: 'babel-eslint',

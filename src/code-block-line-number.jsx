@@ -33,6 +33,9 @@ export default function createCodeBlockWithLineNumbers(OrigPre) {
       <>
         <OrigNode {...props}>
           <div className="code-block-line-number__container">
+            <div className="code-block-line-number__code-contents">
+              {children}
+            </div>
             <div
               className={Classnames({
                 'code-block-line-number__line-numbers': true,
@@ -42,9 +45,6 @@ export default function createCodeBlockWithLineNumbers(OrigPre) {
               <LineNumbersOfCodeBlock
                 numberOfLines={innerText(children).split(/\n/).length - 1}
               />
-            </div>
-            <div className="code-block-line-number__code-contents">
-              {children}
             </div>
           </div>
         </OrigNode>
