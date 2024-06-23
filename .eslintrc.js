@@ -11,7 +11,7 @@ module.exports = {
   ],
   settings: {
     react: {
-      version: '16.14',
+      version: '18.02',
     },
   },
   parser: 'babel-eslint',
