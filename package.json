@@ -1,7 +1,7 @@
 {
   "name": "code-block-line-number",
   "main": "./lib/index",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Display line numbers in code blocks.",
   "keywords": [],
   "scripts": {
