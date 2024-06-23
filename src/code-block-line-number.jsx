@@ -1,5 +1,4 @@
 import React from 'react';
-import Classnames from 'classnames';
 import innerText from 'react-innertext';
 
 export default function createCodeBlockWithLineNumbers(OrigPre) {
