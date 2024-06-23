@@ -23,11 +23,6 @@ export default function createCodeBlockWithLineNumbers(OrigPre) {
         <pre {...props}>{children}</pre>
       );
     };
-    // Detect the code-title plug-in
-    const isCodeTitleActive =
-      React.Children.toArray(children).find((e) =>
-        e?.props?.className?.includes('with-title')
-      ) !== undefined;
     // Render
     return (
       <>
@@ -36,12 +31,7 @@ export default function createCodeBlockWithLineNumbers(OrigPre) {
             <div className="code-block-line-number__code-contents">
               {children}
             </div>
-            <div
-              className={Classnames({
-                'code-block-line-number__line-numbers': true,
-                'with-title-block': isCodeTitleActive,
-              })}
-            >
+            <div className="code-block-line-number__line-numbers">
               <LineNumbersOfCodeBlock
                 numberOfLines={innerText(children).split(/\n/).length - 1}
               />

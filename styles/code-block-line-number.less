@@ -7,22 +7,30 @@
   grid-column-gap: 1em;
   code {
     font-size: 100% !important;
+    white-space: pre;
   }
 }
 
-.code-block-line-number__code-contents:not(:has(svg)) + .code-block-line-number__line-numbers,
-.code-block-line-number__code-contents:not(:has(.katex)) + .code-block-line-number__line-numbers,
-.code-block-line-number__code-contents:not(:has(img)) + .code-block-line-number__line-numbers {
-      user-select: none;
+.code-block-line-number__code-contents:not(:has(svg))
+  + .code-block-line-number__line-numbers,
+.code-block-line-number__code-contents:not(:has(.katex))
+  + .code-block-line-number__line-numbers,
+.code-block-line-number__code-contents:not(:has(img))
+  + .code-block-line-number__line-numbers {
+  user-select: none;
   grid-area: line-numbers;
 }
 
-.code-block-line-number__code-contents:has(svg) + .code-block-line-number__line-numbers,
-.code-block-line-number__code-contents:has(.katex) + .code-block-line-number__line-numbers,
-.code-block-line-number__code-contents:has(img) + .code-block-line-number__line-numbers {
+.code-block-line-number__code-contents:has(svg)
+  + .code-block-line-number__line-numbers,
+.code-block-line-number__code-contents:has(.katex)
+  + .code-block-line-number__line-numbers,
+.code-block-line-number__code-contents:has(img)
+  + .code-block-line-number__line-numbers {
   display: none;
 }
 
 .code-block-line-number__code-contents {
   grid-area: contents;
+  overflow-x: auto;
 }
