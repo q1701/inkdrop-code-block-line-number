@@ -18,6 +18,8 @@ ipm install code-block-line-number
 
 ## Changelog
 
+- 0.5.0
+  - Fix an issue where enabling this plugin prevents code block wrapping
 - 0.4.0
   - Disabled line numbers for non-text code blocks (Thanks [lssch](https://github.com/lssch))
 - 0.3.0
