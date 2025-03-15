@@ -21,7 +21,7 @@
   grid-area: line-numbers;
 }
 
-.code-block-line-number__code-contents:has(svg)
+.code-block-line-number__code-contents:has(svg:not([class^='codeblock-icon-']))
   + .code-block-line-number__line-numbers,
 .code-block-line-number__code-contents:has(.katex)
   + .code-block-line-number__line-numbers,
