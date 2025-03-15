@@ -18,6 +18,8 @@ ipm install code-block-line-number
 
 ## Changelog
 
+- 0.6.0
+  - Fix missing line numbers caused by copy-code-to-clipboard plugin update
 - 0.5.0
   - Fix an issue where enabling this plugin prevents code block wrapping
 - 0.4.0
