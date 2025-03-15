@@ -1,4 +1,3 @@
-import React from 'react';
 import innerText from 'react-innertext';
 
 export default function createCodeBlockWithLineNumbers(OrigPre) {
@@ -7,7 +6,7 @@ export default function createCodeBlockWithLineNumbers(OrigPre) {
     return (
       <code className="line-numbers-of-code-block">
         {Array.from({ length: numberOfLines }, (_, i) => {
-          return <span>{`${(i + 1).toString().padStart(3)}\n`}</span>;
+          return <span key={i}>{`${(i + 1).toString().padStart(3)}\n`}</span>;
         })}
       </code>
     );

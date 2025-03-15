@@ -3,6 +3,7 @@
   "main": "./lib/index",
   "version": "0.5.0",
   "description": "Display line numbers in code blocks.",
+  "type": "module",
   "keywords": [],
   "scripts": {
     "build": "babel src/ -d lib/"
@@ -16,22 +17,25 @@
     "react-innertext": "^1.1.5"
   },
   "devDependencies": {
-    "@babel/cli": "^7.20.7",
-    "@babel/core": "^7.20.12",
+    "@babel/cli": "^7.26.4",
+    "@babel/core": "^7.26.10",
+    "@babel/eslint-parser": "^7.26.10",
     "@babel/plugin-proposal-class-properties": "^7.18.6",
-    "@babel/preset-env": "^7.20.2",
-    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-env": "^7.26.9",
+    "@babel/preset-react": "^7.26.3",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "babel-eslint": "^10.1.0",
-    "core-js": "^3.27.2",
-    "eslint": "^8.33.0",
+    "core-js": "^3.41.0",
+    "eslint": "^9.22.0",
     "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-prettier": "^8.6.0",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-jsx-a11y": "^6.7.1",
-    "eslint-plugin-react": "^7.32.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "prettier": "^2.8.3"
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "globals": "^16.0.0",
+    "prettier": "^3.5.3"
   }
 }
